@@ -27,8 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write '{*.jsx,src/**/*.{js,jsx}}'",
-    "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix",
+    "lint": "eslint src/ --fix && yarn format",
     "commit": "git-cz"
   },
   "eslintConfig": {
@@ -51,8 +50,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint:fix && yarn format",
-      "pre-push": "yarn lint:fix && yarn format",
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
