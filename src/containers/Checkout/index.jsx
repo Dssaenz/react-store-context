@@ -1,11 +1,16 @@
 import React from 'react';
-import './styles.css';
+import './styles.css'
 
 function Checkout() {
   return (
     <div>
-      <h1>Checkout</h1>
+      <h1>
+        Checkout
+
+      </h1>
     </div>
+
+
   );
 }
 
