@@ -1,8 +1,5 @@
-import Home from './Home';
-import NotFound from './NotFound';
-import Success from './Success';
-import Checkout from './Checkout';
-import Payment from './Payment';
-import Information from './Information';
+import Layout from './Layout';
+import Header from './Header';
+import Footer from './Footer';
 
-export { Home, NotFound, Success, Checkout, Payment, Information };
+export { Layout, Header, Footer };
