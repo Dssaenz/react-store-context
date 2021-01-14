@@ -51,8 +51,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint:fix",
-      "pre-push": "yarn lint:fix",
+      "pre-commit": "yarn lint:fix && yarn format",
+      "pre-push": "yarn lint:fix && yarn format",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
