@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/checkout" component={Checkout} />
           <Route exact path="/checkout/information" component={Information} />
           <Route exact path="/checkout/payment" component={Payment} />
-          <Route exact path="checkout/success/" component={Success} />
+          <Route exact path="/checkout/success" component={Success} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
