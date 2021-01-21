@@ -17,6 +17,8 @@
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-paypal-button": "^4.1.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
@@ -25,7 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --fix",
+    "format": "prettier --write '{*.jsx,src/**/*.{js,jsx}}'",
+    "lint": "eslint src/ --fix && yarn format",
     "commit": "git-cz"
   },
   "eslintConfig": {
@@ -48,7 +51,7 @@
   },
   "husky": {
     "hooks": {
-	    "pre-commit": "yarn lint",
+      "pre-commit": "yarn lint",
       "pre-push": "yarn lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
