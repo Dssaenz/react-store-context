@@ -7,9 +7,7 @@ function Product({ product, handleAddToCard }) {
       <img src={product.image} alt={product.title} />
       <div className="Products-item-info">
         <h2>
-          {product.title}
-          {' '}
-          <spam>{product.price}</spam>
+          {product.title} <spam>{product.price}</spam>
         </h2>
         <p>{product.description}</p>
       </div>
